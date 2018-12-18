@@ -1,0 +1,40 @@
+<!doctype HTML>
+<head>
+
+<title>Timer Example</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var countDown=60;
+    var gameLoop= window.setInterval(update,1000);
+    
+    
+    function update()
+    {
+        
+      countDown--;   
+
+      console.log("Time Left: "+countDown);
+    if(countDown<1)
+    {
+        window.clearInterval(gameLoop);
+        
+        //calls endGameAfterDelay() after 2 seconds
+        //Use setTimeOut to execute a function once after some delay
+        window.setTimeout(endGameAfterDelay, 2000);
+    }
+        
+    }
+    
+    function endGameAfterDelay()
+    {
+        console.log("Time's up!");
+    }
+    
+</script>
+        
+    

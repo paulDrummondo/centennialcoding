@@ -1,0 +1,175 @@
+*
+{
+    font-family:emulogic;
+    padding: 0px;
+    margin: 0px;  
+}
+
+@font-face
+{
+    
+    font-family:emulogic;
+    src: url("../fonts/emulogic.ttf");
+}
+
+h1
+{
+    text-align: center;
+    font-size: 26px;
+    color: crimson;
+    text-shadow: 3px 3px lime;
+    
+    -webkit-text-stroke: 1px #000; /*hex color black is #000 */
+    -moz-text-stroke: 1px #000;
+    text-stroke: 1px #000;
+    padding-bottom:20px;
+}
+
+#game
+{
+    margin:0px auto;
+    width:330px;
+    height: auto;
+    padding:15px;
+    border: black;
+    background: -webkit-linear-gradient(300deg,#588063,#000);
+      background: -moz-linear-gradient(300deg,#588063,#000);
+      background: linear-gradient(300deg,#588063,#000);
+    
+    -webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+    
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    
+}
+
+#stage
+{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0px auto;
+    
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border: 1px solid lime;
+    margin-bottom:20px;
+}
+
+ 
+#background
+{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-image: url(../images/background.png);
+    z-index: 0;
+}
+
+#cannon
+{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:270px;
+    left:140px;
+    background-image: url(../images/cannon.png); 
+    
+    /*firefox*/
+    -moz-transition: left 0.5s ease-out 0s;    
+    /*chrome or safari*/
+    -webkit-transition: left 0.5s ease-out 0s;
+    /*IE*/
+    transition: left 0.5s ease-out 0s; 
+       z-index: 1;
+}
+
+
+#missile
+{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:240px;
+    left:145px;
+    background-image: url(../images/missile.png);
+    
+       z-index: 2;
+}
+
+
+#alien
+{
+     width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-image: url(../images/alien.png);
+    
+    
+}
+
+
+#explosion
+{
+    display:none; /* set to none to make it invisible initially*/
+    width: 20px;
+    height:20px;
+    position: absolute;
+    top:0px;
+    left:0px; 
+    background-image: url(../images/explosion.png);
+    
+    
+}
+
+#output
+{
+   text-align: center;
+   font-size:10px;
+   padding-bottom: 20px;
+   color: darkcyan; 
+}
+
+input
+{
+    font-size: 15px;
+    background-color:black;
+    color: #ffbf00; 
+    border: 1px solid lime;
+    -webkit-border-radius:10px 0px 10px 0px;
+    -moz-border-radius: 10px 0px 10px 0px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+button
+{
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 2px solid lime;
+    color:#ffbf00;
+      -webkit-border-radius:10px 0px 10px 0px;
+    -moz-border-radius: 10px 0px 10px 0px;
+    border-radius: 10px 0px 10px 0px;
+    
+    background: black;
+    
+}
+button:hover
+{
+    background-color: #FFBF00; /*yellow*/
+    color:#000; /*black*/
+}
+
+button:active
+{
+    background-color: #9e7606;
+    color:#000;
+}
